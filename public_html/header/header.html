@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <a class="navbar-brand" ui-sref="app">Listame</a>
+    <div class="nav-link" ng-if="app.misdatos|isState"><a>Listas Suscrito</a></div>
+    <div class="nav-link" ng-if="app.misdatos|isState" ui-sref="app.contactos" ><a>Contactos</a></div>
+    <div class="nav-link" ng-if="app.contactos|isState"><a>Mis Listas</a></div>
+    <div class="nav-link" ng-if="app.contactos|isState" ui-sref="app.misdatos" ><a>Mis Datos</a></div>
+</nav>
