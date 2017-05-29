@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
+        <script src="js/tether.min.js" type="text/javascript"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/jquery-3.1.1.js" type="text/javascript"></script>
         <script src="js/angular.min.js" type="text/javascript"></script>
@@ -20,14 +15,23 @@ and open the template in the editor.
         <script src="js/angular-ui-router.min.js" type="text/javascript"></script>
         <script src="pages/contactos/contactos.controller.js" type="text/javascript"></script>
         <script src="pages/mislistas/mislistas.controller.js" type="text/javascript"></script>
+        <script src="pages/suscritas/suscritas.controller.js" type="text/javascript"></script>
+        <script src="pages/buscar/buscar.controller.js" type="text/javascript"></script>
+        <script src="pages/lista/listadelacompra/listacompra.controller.js" type="text/javascript"></script>
+        
     </head>
     <body ng-app="myApp">
-        <div id="container">
-            <div id="row">
-                <div id="col-lg-12">
+        <div class="container">
+            <div class="row" style="text-align: center">
+                <div class="col-lg-12">
             <div ui-view="header"></div>
+            <div ui-view="header2"></div>
 
-            <div ui-view="content"></div> 
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div ui-view="content"></div>
+                </div>
+            </div>
 
             <div ui-view="footer"></div>
             </div>
